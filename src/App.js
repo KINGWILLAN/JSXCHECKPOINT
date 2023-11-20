@@ -6,6 +6,8 @@ import Card from "react-bootstrap/Card";
 import Price from "./components/Price";
 import Description from "./components/Description";
 import { Col, Row, Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 let firstName = prompt("Enter your first name").trim();
 const App = () => {

@@ -1,18 +1,11 @@
 import React from "react";
-import { carBrandJSON } from "../product";
+import { productJSON } from "../product";
 import Card from "react-bootstrap/Card";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // the component that contains image
 const Image = () => {
-  const carBrand = JSON.parse(carBrandJSON);
+  const products = JSON.parse(productJSON);
 
-  return (
-    <>
-      <div>
-        <Card.Img variant="top" src={carBrand.img} />
-      </div>
-    </>
-  );
+  return <Card.Img variant="top" src={carBrand.img} />;
 };
 export default Image;
