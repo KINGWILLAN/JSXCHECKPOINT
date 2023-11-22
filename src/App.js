@@ -6,12 +6,11 @@ import Card from "react-bootstrap/Card";
 import Price from "./components/Price";
 import Description from "./components/Description";
 import { Col, Row } from "react-bootstrap";
-import { Container } from "react-bootstrap/lib/Tab";
 
 let firstName = prompt("Enter your first name").trim();
 const App = () => {
   return (
-    <Container className="mt-5">
+    <div className="mt-5">
       <Row>
         <Col lg={{ span: 12, offset: 4 }}>
           <Card style={{ width: "18rem" }} className="justify-content-center">
@@ -39,7 +38,7 @@ const App = () => {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 
